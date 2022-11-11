@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>JavaScript strings</h1>
+        <h2>The match() Method</h2>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+        <script>
+            let text = "I love cats. Cats are very easy to love. Cats are very popular.";
+
+            let text2 = "Hello world, welcome to the universe.";
+
+            const iterator = text.matchAll("Cats");
+
+            document.getElementById("demo").innerHTML = Array.from(iterator);
+
+            document.getElementById("demo2").innerHTML = text2.includes("world");
+
+            document.getElementById("demo3").innerHTML = text2.includes("world", 12);
+        </script>
+    </body>
+</html>

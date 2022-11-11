@@ -9,12 +9,26 @@
         <h1>JavaScript Strings</h1>
         <h2>The indexOf() method</h2>
 
+        <p id="demo2"></p>
+
+        <p id="demo3"></p>
+
+        <p id="demo4"></p>
+
+        <p id="demo5"></p>
+
         <p>Both indexOf() and lastIndexOf() return -1 if the text is not found:</p>
         <p id="demo"></p>
 
         <script>
             let text = "Please locate where 'locate' occurs!";
+            let text2 = "The rain in SPAIN stays mainly in the plain";
+            text2.match("ain");
             document.getElementById("demo").innerHTML = text.indexOf("John");
+            document.getElementById("demo2").innerHTML = text.indexOf("locate");
+            document.getElementById("demo3").innerHTML = text.lastIndexOf("locate", 15);
+            document.getElementById("demo4").innerHTML = text.indexOf("locate", 15);
+            document.getElementById("demo5").innerHTML = text.search("locate");
         </script>
     </body>
 </html>
